@@ -1,4 +1,4 @@
-ENGLISH_WORDS = {
+getgenv().ENGLISH_WORDS = {
 		"reculing",
 		"conferencier",
 		"nightwalker",
