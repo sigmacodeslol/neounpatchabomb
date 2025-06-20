@@ -2,3 +2,23 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmacodeslol/neounpa
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmacodeslol/neounpatchabomb/refs/heads/master/periodictable"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmacodeslol/neounpatchabomb/refs/heads/master/longwords"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmacodeslol/neounpatchabomb/refs/heads/master/MUSTUSE"))()
+
+function merge_unique_lists(...)
+	local merged_list = {}
+	local seen = {}
+	for _, list in ipairs({ ... }) do
+		for _, item in ipairs(list) do
+			if not seen[item] then
+				table.insert(merged_list, item)
+				seen[item] = true
+			end
+		end
+  end
+	return merged_list
+end
+
+if getgenv().short then
+		ENGLISH_WORDS = merge_unique_lists(getgenv().ENGLISH_WORDS, getgenv().MUSTUSE, getgenv().PERIODIC, getgenv().LONGW)
+	else
+		ENGLISH_WORDS = merge_unique_lists(getgenv().MUSTUSE, getgenv().LONGW, getgenv().PERIODIC, getgenv().ENGLISH_WORDS)
+	end
