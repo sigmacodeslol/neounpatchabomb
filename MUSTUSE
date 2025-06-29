@@ -1,4 +1,4 @@
-getgenv().MUSTUSE = {
+getgenv().wordbomb.MUSTUSE = {
   "convolvulaceous",
   "one-hundred-percentisms",
   "sclerectoiridectomy",
