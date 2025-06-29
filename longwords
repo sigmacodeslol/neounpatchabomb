@@ -1,4 +1,4 @@
-getgenv().LONGW = {
+getgenv().wordbomb.LONGW = {
 		"supercalifragilisticexpialidocious",
 		"pseudopseudohypoparathyroidism",
 		"sphenopalatineganglioneuralgia",
