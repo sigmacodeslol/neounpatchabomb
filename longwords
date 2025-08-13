@@ -1,8 +1,9 @@
-getgenv().wordbomb.LONGW = {
+_G.wordbomb.LONGW = {
 		"supercalifragilisticexpialidocious",
 		"pseudopseudohypoparathyroidism",
 		"sphenopalatineganglioneuralgia",
 		"hexakosioihexekontahexaphobia",
+		"floccinaucinihilipilification",
 		"antidisestablishmentarianism",
 		"ethylenediaminetetraacetates",
 		"electroencephalographically",
