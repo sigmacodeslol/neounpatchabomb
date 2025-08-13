@@ -1,4 +1,4 @@
-getgenv().wordbomb.PERIODIC = {
+_G.wordbomb.PERIODIC = {
 		"hydrogen",
 		"helium",
 		"lithium",
