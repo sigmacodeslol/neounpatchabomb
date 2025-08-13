@@ -1,6 +1,6 @@
-getgenv().wordbomb.MUSTUSE = {
+_G.wordbomb.MUSTUSE = {
   "convolvulaceous",
   "one-hundred-percentisms",
   "dichlorodiphenyltrichloroethane",
-  "semihemidemisemiquaver",
+  "hemidemisemiquaver",
 }
