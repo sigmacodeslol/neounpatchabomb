@@ -1,4 +1,4 @@
-getgenv().wordbomb = {}
+_G.wordbomb = {}
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmacodeslol/neounpatchabomb/refs/heads/master/englishwords"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmacodeslol/neounpatchabomb/refs/heads/master/periodictable"))()
@@ -19,8 +19,8 @@ function merge_unique_lists(...)
 	return merged_list
 end
 
-local words = getgenv().wordbomb
-if getgenv().short then
+local words = _G.wordbomb
+if _G.short then
 		ENGLISH_WORDS = merge_unique_lists(words.ENGLISH_WORDS, words.MUSTUSE, words.PERIODIC, words.LONGW)
 	else
 		ENGLISH_WORDS = merge_unique_lists(words.MUSTUSE, words.LONGW, words.PERIODIC, words.ENGLISH_WORDS)
