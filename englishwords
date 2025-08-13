@@ -1,4 +1,4 @@
-getgenv().wordbomb.ENGLISH_WORDS = {
+_G.wordbomb.ENGLISH_WORDS = {
 		"reculing",
 		"conferencier",
 		"nightwalker",
